@@ -1,0 +1,35 @@
+{
+  "name": "detalhes",
+  "version": "1.0.0",
+  "description": "detalhes",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.3.1",
+    "normalize.css": "^7.0.0",
+    "popper.js": "^1.12.9",
+    "tiny-lr": "^1.0.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegopmoreira/site-detalhes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegopmoreira/site-detalhes/issues"
+  },
+  "homepage": "https://github.com/diegopmoreira/site-detalhes#readme"
+}
