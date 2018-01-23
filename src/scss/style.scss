@@ -90,6 +90,7 @@ body{
 
 .bg-navbar{
   background: $bg_nav;
+  transition: 0.5s ease;
 }
 
 .nav-link{
@@ -97,5 +98,105 @@ body{
   margin-left: 60px;
   font-family: Arial;
   color: $c2;
+}
+
+.carousel{
+  margin-right: -15px;
+  margin-left: -15px;
+  top: 80px;
+  
+  
+}
+
+.d-block{
+  background-position: center;
+}
+
+.third-page{
+  text-align: center;
+  height:100%;
+  width:100%;
+  background-color: $c1;
+  padding-top: 160px;
+  padding-left: 220px;
+  padding-right: 220px;
+  color: whitesmoke;
+  
+  h1{
+    font-size: 72px;
+    &::after{
+      content: "";
+      display: block;
+      width: 5%;
+      height: 5px;
+      margin: 10px auto;
+      background-color: whitesmoke;
+      margin-bottom: 60px;
+    }
+   
+  }
+  p{
+    font-size: 28px;
+  }
+}
+
+.form-contato{
+  height:100%;
+  width:100%;
+  background-color: $c2;
+  padding-top: 80px;
+  color: whitesmoke;
+  text-align:center;
+  h1{
+    font-size: 72px;
+    &::after{
+      content: "";
+      display: block;
+      width: 5%;
+      height: 5px;
+      margin: 10px auto;
+      background-color: whitesmoke;
+      margin-bottom: 60px;
+    }
+  }
+}
+.sticky-top{
+  position:fixed;
+}
+
+.navbar{
+  background-color: $bg_nav;
+  width: 100%;
+  transition: 0.5s ease;
+
+}
+
+.col-3{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.projetos .row{
+  padding-top: 80px;
+}
+
+.text-projeto{
+  color:white;
+  position:absolute;
+  opacity: 0;
+  
+  top:50%;
+  left:50%;
+  transition: 0.5s ease-in-out;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.projeto:hover{
+  opacity:0.3;
+  .text-projeto{
+    opacity:1;
+  }
+
 }
 
