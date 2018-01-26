@@ -18,25 +18,33 @@
   <section class="container-fluid first-page">
 
 
-    <div class="row justify-content-center">
-      <img class="col-4 big-logo img-fluid" src="src/img/logo sem nome.png">
-    </div>
+    <a href="#" style="text-decoration: none">
+      <div class="row justify-content-center">
+        <img class="col-4 big-logo img-fluid" src="src/img/logo sem nome.png">
+      </div>
 
-    <div class="first-title row justify-content-center">
-      <h1 class="col-10">Detalhes</h1>
-    </div>
-    <div class="second-title row justify-content-center">
-      <h1 class="col-10">Arquitetura e Design</h1>
-    </div>
+      <div class="first-title row justify-content-center">
+        <h1 class="col-10">Detalhes</h1>
+      </div>
+      <div class="second-title row justify-content-center">
+        <h1 class="col-10">Arquitetura e Design</h1>
+      </div>
+    </a>
 
 
 
 
 
     <ul class="row justify-content-center first-menu">
-      <li class="col-sm-2">Projetos</li>
-      <li class="col-sm-2">Sobre</li>
-      <li class="col-sm-2">Contato</li>
+      <li class="col-sm-2 proj-menu">
+        <a href="#">Projetos</a>
+      </li>
+      <li class="col-sm-2 sobre-menu">
+        <a href="#">Sobre</a>
+      </li>
+      <li class="col-sm-2 cont-menu">
+        <a href="#">Contato</a>
+      </li>
     </ul>
 
   </section>
@@ -48,13 +56,13 @@
 
     <ul class="nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Projetos</a>
+        <a class="nav-link proj-menu" href="#">Projetos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sobre</a>
+        <a class="nav-link sobre-menu" href="#">Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contato</a>
+        <a class="nav-link cont-menu" href="#">Contato</a>
       </li>
     </ul>
 
@@ -196,10 +204,36 @@
       Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
   </section>
   <section class="form-contato container-fluid fourth-page">
-    <h1>SOBRE</h1>
-    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
-
+    <h1>CONTATO</h1>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-4">
+          <h5>Nome</h5>
+          <input type="text" class="form-control" id="inlineFormInput" placeholder="">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-4">
+          <h5>Email</h5>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-4">
+          <h5>Telefone</h5>
+          <input type="tel" class="form-control" id="inlineFormInput" placeholder="">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-4">
+          <h5>Mensagem</h5>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+        </div>
+      </div>
+      <div class="separator-vert"></div>
+      <div class="separator-hor"></div>
+    </form>
+   
   </section>
 
   <footer>

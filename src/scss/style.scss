@@ -1,7 +1,7 @@
 $bg_nav: #efd09a;
 $c1: #838637;
 $c2: #1f3646;
-
+$c3: #ddd9ce;
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-25%);
@@ -36,6 +36,9 @@ body{
     text-align:center;
     color: $c2;
     font-size: 28px;
+    a{
+      color: $c2;
+    }
   }
 }
 
@@ -145,9 +148,8 @@ body{
 .form-contato{
   height:100%;
   width:100%;
-  background-color: $c2;
-  padding-top: 80px;
-  color: whitesmoke;
+  background-color: $c3;
+  padding-top: 80px;  
   text-align:center;
   h1{
     font-size: 72px;
@@ -157,9 +159,37 @@ body{
       width: 5%;
       height: 5px;
       margin: 10px auto;
-      background-color: whitesmoke;
+      background-color: $c2;
       margin-bottom: 60px;
     }
+  }
+  form{
+    position:relative;
+    left:10%;
+    h5{
+      text-align: initial;
+      font-family:Arial;
+    }
+  }
+  .separator-vert{
+    content:"";
+    display:block;
+    width:2px;
+    height: 40%;
+    position:absolute;
+    left:50%;
+    top:15%;
+    background-color: $c2;
+  }
+  .separator-hor{
+    content:"";
+    display:block;
+    height:2px;
+    width: 15%;
+    position:absolute;
+    left:50%;
+    top:35%;
+    background-color: $c2;
   }
 }
 .sticky-top{

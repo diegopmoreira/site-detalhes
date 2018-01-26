@@ -10,7 +10,7 @@ $(document).ready(function () {
   }, 2500);
 
 
-  $(window).one('scroll', function () {
+  $('.big-logo').click(function () {
     $('.first-page').slideUp(700);
     $('html, body').animate({ scrollTop: '0px' }, 300);
     $('.navbar').fadeIn(800);
@@ -19,18 +19,42 @@ $(document).ready(function () {
   $(window).on('scroll', function () {
     var navlink_off = $('.nav-link').offset();
     var pos_slide_off = $('.first-menu').offset();
-    if(navlink_off.top > 100 && pos_slide_off.top == 0){
-      $(".nav-link").css("color","white");
-     
-      $(".navbar").css("background-color","transparent");
-    }else{
-      $(".nav-link").css("color","#1f3646");
-      $(".navbar").css("background-color","#efd09a");
-      
+    if (navlink_off.top > 100 && pos_slide_off.top == 0) {
+      $(".nav-link").css("color", "white");
+
+      $(".navbar").css("background-color", "transparent");
+    } else {
+      $(".nav-link").css("color", "#1f3646");
+      $(".navbar").css("background-color", "#efd09a");
+
     }
   });
 
+  $(".proj-menu").click(function () {
 
+    $('.first-page').slideUp(600, function () {
+      $('.navbar').fadeIn(800);
+      $('html, body').animate({ scrollTop: $(".projetos").offset().top }, 1000);
+    });
+
+  });
+
+  $(".sobre-menu").click(function () {
+
+    $('.first-page').slideUp(600, function () {
+      $('.navbar').fadeIn(800);
+      $('html, body').animate({ scrollTop: $(".sobre").offset().top }, 1000);
+    });
+
+  });
+  $(".cont-menu").click(function () {
+
+    $('.first-page').slideUp(600, function () {
+      $('.navbar').fadeIn(800);
+      $('html, body').animate({ scrollTop: $(".form-contato").offset().top }, 1000);
+    });
+
+  });
 
 
 
