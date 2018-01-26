@@ -2,6 +2,8 @@ $bg_nav: #efd09a;
 $c1: #838637;
 $c2: #1f3646;
 $c3: #ddd9ce;
+$bg_footer: #d5ba8b;
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-25%);
@@ -19,6 +21,7 @@ body{
   font-family: 'Shadows Into Light', cursive;
   background: $bg_nav;
   height:1000px;
+  
 }
 
 .first-page{
@@ -32,6 +35,7 @@ body{
 .first-menu{
   position: relative;  
   top: 100px;
+    
   li{
     text-align:center;
     color: $c2;
@@ -91,6 +95,7 @@ body{
   width:100%;
   max-width:100%;
   object-fit: cover;
+  background-color: black;
 }
 
 .bg-navbar{
@@ -141,6 +146,7 @@ body{
    
   }
   p{
+    font-family: arial;
     font-size: 28px;
   }
 }
@@ -200,12 +206,14 @@ body{
   background-color: $bg_nav;
   width: 100%;
   transition: 0.5s ease;
-
+  
 }
 
 .col-3{
   padding-left:0px;
   padding-right:0px;
+  background-color:black;
+  
 }
 
 .projetos .row{
@@ -224,11 +232,36 @@ body{
   font-size: 18px;
 }
 
-.projeto:hover{
-  opacity:0.3;
-  .text-projeto{
-    opacity:1;
+.projeto:hover{ 
+  img{
+  opacity:0.3;    
   }
-
+  .text-projeto{
+  
+    opacity:1;
+    color: whitesmoke;
+  
+}
 }
 
+.dados{
+  display:block;
+  position: absolute;
+  top:10%;
+  left:50%;
+  text-align: start;
+  font-family: Arial;
+}
+.redes-sociais{
+  display:block;
+  bottom: -85%;
+  position: absolute;
+}
+
+footer{
+  background-color:$bg_footer;
+  height: 100px;
+  text-align: center;
+  font-family: arial;
+  padding-top:20px;
+}
